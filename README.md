@@ -3,7 +3,7 @@
 Just compile whatever Theorem to check its proof importing these ProofChecker and Terms and verify it.
 
 Example
-
+```
 import ProofChecker
 import Terms
 
@@ -17,5 +17,5 @@ verify = let theorem = (p <==> q) <==> q === p in
          statement 3.4 with (p =: p) using lambda z (z)
          >>=
          done theorem
-
+```
 At the end it will show if the proof was successful or not, and point out the first inference error that might have occurred.
